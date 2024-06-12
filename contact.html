@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jordan Collection</title>
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Air Jordan Collection</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+                <form action="submit_contact_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <section>
+                    <a href="https://www.facebook.com/profile.php?id=100087471828259" class="facebook-link" target="_blank">
+                    <img src="src/images/fblogo1.jpg" alt="facebook" class="facebook-logo">
+                    </a>
+                    <a href="https://www.instagram.com/zablan_kyle/?hl=en" class="instagram-logo" target="_blank">
+                        <img src="src/images/iglogo.jpg" alt="instagram" class="facebook-logo">
+                    </a>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Air Jordan Collection. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+:root {
+    --primary-color: #111;
+    --secondary-color: #fff;
+    --accent-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Arial, sans-serif';
+    --container-width: 90%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--accent-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.jordan-collection {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.jordan-collection h2 {
+    margin-bottom: 20px;
+}
+
+.jordan {
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.jordan img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.jordan h3 {
+    margin-top: 10px;
+}
+
+.jordan p {
+    margin-top: 5px;
+}
+
+
+.details{
+    display: none;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.jordan.active .details{
+    display: block;
+}
+
+
+footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
